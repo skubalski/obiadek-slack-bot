@@ -1,0 +1,12 @@
+{
+  "name": "obiadek-slack-bot",
+  "version": "0.0.1",
+  "engines": {
+    "node": "8.1.x"
+  },
+  "dependencies": {
+    "@slack/client": "^3.10.0",
+    "bluebird": "^3.5.0",
+    "pg-promise": "^6.3.5"
+  }
+}
