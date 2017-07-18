@@ -54,7 +54,7 @@ function generateDinnerOption() {
 }
 
 function generateMessage(dinner) {
-  return `Dinner for today is ${dinner.name}`;
+  return `@channel Dinner for today is ${dinner.name}`;
 }
 
 async function postMessage() {
