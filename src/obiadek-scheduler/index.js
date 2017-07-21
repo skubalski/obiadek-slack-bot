@@ -67,7 +67,7 @@ async function postMessage() {
     publicChannel => publicChannel.is_member
   );
   memberChannels.push(...privateChannels);
-  const dinner = await generateDinnerOption();
+  const dinner = moment().day() === 5 ? 'KFC' : await generateDinnerOption();
   const message = generateMessage(dinner);
   await Promise.all(
     memberChannels.map(memberChannel => sendMessage(
